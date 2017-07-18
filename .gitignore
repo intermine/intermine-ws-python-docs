@@ -12,3 +12,196 @@ executeLog*
 *.class
 productionLog
 *~
+
+!/intermine/webservice/client/download/dist/
+
+# /intermine/objectstore/main/
+/intermine/objectstore/main/src.png
+/intermine/objectstore/main/src.dot
+
+# /intermine/perl/
+/intermine/perl/blib
+/intermine/perl/Makefile
+/intermine/perl/Makefile.old
+/intermine/perl/pm_to_blib
+
+# /intermine/perl/InterMine-Item/
+/intermine/perl/InterMine-Item/*.tar.gz
+/intermine/perl/InterMine-Item/*.yml
+/intermine/perl/InterMine-Item/_build
+/intermine/perl/InterMine-Item/Build
+/intermine/perl/InterMine-Item/blib
+/intermine/perl/InterMine-Item/Makefile.PL
+/intermine/perl/InterMine-Item/*bak
+/intermine/perl/InterMine-Item/MYMETA.*
+/intermine/perl/InterMine-Item/META.*
+
+# /intermine/perl/InterMine-Model/
+/intermine/perl/InterMine-Model/*tar.gz
+/intermine/perl/InterMine-Model/*.yml
+/intermine/perl/InterMine-Model/Makefile.PL
+/intermine/perl/InterMine-Model/Build
+/intermine/perl/InterMine-Model/_build
+/intermine/perl/InterMine-Model/blib
+/intermine/perl/InterMine-Model/*.bak
+/intermine/perl/InterMine-Model/MYMETA.*
+/intermine/perl/InterMine-Model/META.*
+
+# /intermine/perl/InterMine-TypeLibrary/
+/intermine/perl/InterMine-TypeLibrary/*.tar.gz
+/intermine/perl/InterMine-TypeLibrary/*.yml
+/intermine/perl/InterMine-TypeLibrary/Makefile.PL
+/intermine/perl/InterMine-TypeLibrary/Build
+/intermine/perl/InterMine-TypeLibrary/_build
+/intermine/perl/InterMine-TypeLibrary/blib
+/intermine/perl/InterMine-TypeLibrary/*.bak
+
+# /intermine/perl/MineViewer/
+/intermine/perl/MineViewer/blib
+/intermine/perl/MineViewer/*META*
+/intermine/perl/MineViewer/logs
+/intermine/perl/MineViewer/Build
+/intermine/perl/MineViewer/build
+/intermine/perl/MineViewer/_build
+/intermine/perl/MineViewer/.git
+/intermine/perl/MineViewer/.git-ignore
+/intermine/perl/MineViewer/*.pid
+
+# /intermine/perl/MineViewer/data/
+/intermine/perl/MineViewer/data/*.db
+
+# /intermine/perl/MineViewer/public/javascripts/
+/intermine/perl/MineViewer/public/javascripts/*zip
+/intermine/perl/MineViewer/public/javascripts/js
+/intermine/perl/MineViewer/public/javascripts/css
+/intermine/perl/MineViewer/public/javascripts/development-bundle
+/intermine/perl/MineViewer/public/javascripts/DataTables*
+
+# /intermine/perl/WebReports/
+/intermine/perl/WebReports/*.pid
+/intermine/perl/WebReports/Build
+/intermine/perl/WebReports/Build.Pl
+/intermine/perl/WebReports/*META*
+
+# /intermine/perl/Webservice-InterMine/
+/intermine/perl/Webservice-InterMine/*.tar.gz
+/intermine/perl/Webservice-InterMine/_build
+/intermine/perl/Webservice-InterMine/blib
+/intermine/perl/Webservice-InterMine/Build
+/intermine/perl/Webservice-InterMine/*.yml
+/intermine/perl/Webservice-InterMine/Makefile*
+/intermine/perl/Webservice-InterMine/*.out
+/intermine/perl/Webservice-InterMine/nytprof
+/intermine/perl/Webservice-InterMine/cover_db
+/intermine/perl/Webservice-InterMine/_Inline
+/intermine/perl/Webservice-InterMine/*.bak
+/intermine/perl/Webservice-InterMine/MYMETA.json
+/intermine/perl/Webservice-InterMine/META.json
+
+# /intermine/perl/Webservice-InterMine-Bio/
+/intermine/perl/Webservice-InterMine-Bio/MYMETA.*
+/intermine/perl/Webservice-InterMine-Bio/META.*
+/intermine/perl/Webservice-InterMine-Bio/blib
+/intermine/perl/Webservice-InterMine-Bio/Build
+/intermine/perl/Webservice-InterMine-Bio/_build
+/intermine/perl/Webservice-InterMine-Bio/Makefile.PL
+/intermine/perl/Webservice-InterMine-Bio/*.tar.gz
+/intermine/perl/Webservice-InterMine-Bio/*.swp
+/intermine/perl/Webservice-InterMine-Bio/*.bak
+
+# /intermine/perl/Webservice-InterMine-Simple/
+/intermine/perl/Webservice-InterMine-Simple/blib
+/intermine/perl/Webservice-InterMine-Simple/_build
+/intermine/perl/Webservice-InterMine-Simple/Build
+/intermine/perl/Webservice-InterMine-Simple/Build.PL
+/intermine/perl/Webservice-InterMine-Simple/*META*
+
+# /intermine/perl/registry/
+/intermine/perl/registry/logs
+/intermine/perl/registry/data
+/intermine/perl/registry/sessions
+/intermine/perl/registry/Build
+/intermine/perl/registry/*build
+/intermine/perl/registry/blib
+/intermine/perl/registry/*tar.gz
+/intermine/perl/registry/script
+/intermine/perl/registry/data_old
+/intermine/perl/registry/*pid
+/intermine/perl/registry/*META*
+
+# /intermine/python/
+/intermine/python/*.egg-info
+/intermine/python/*.zip
+/intermine/python/htmlcov
+/intermine/python/docs
+/intermine/python/.git
+
+# /intermine/python/intermine-core
+/intermine/python/intermine-core/*.egg-info
+/intermine/python/intermine-core/*.zip
+/intermine/python/intermine-core/htmlcov
+/intermine/python/intermine-core/docs
+/intermine/python/intermine-core/.git
+/intermine/python/intermine-core/.tox
+
+# /intermine/python/intermine-bio/
+/intermine/python/intermine-bio/docs
+
+# /intermine/python/intermine-core/
+/intermine/python/intermine-core/docs
+/intermine/python/intermine-core/htmlcov
+/intermine/python/intermine-core/*.zip
+
+# /intermine/ruby/intermine/
+/intermine/ruby/intermine/pkg
+/intermine/ruby/intermine/html
+
+# /intermine/ruby/intermine-bio/
+/intermine/ruby/intermine-bio/html
+/intermine/ruby/intermine-bio/pkg
+
+# /intermine/scripts/
+/intermine/scripts/_Inline
+
+# testmodel
+/testmodel/test/properties
+/testmodel/webapp/test/properties
+
+# /intermine/web/main/
+/intermine/web/main/files
+/intermine/web/main/allclasses-frame.html
+/intermine/web/main/index.html
+/intermine/web/main/overview-frame.html
+/intermine/web/main/stylesheet.css
+
+# /intermine/web/test
+/intermine/web/test/properties
+
+# intermine/api/test
+/intermine/api/test/properties
+
+# /intermine/web/test/src/org/intermine/webservice/server/output/
+/intermine/web/test/src/org/intermine/webservice/server/output/RowResultProcessorBenchmark.java
+/intermine/web/test/src/org/intermine/webservice/server/output/FilterBenchmarkTest.java
+
+# /intermine/webapp/main/resources/webapp/images/
+/intermine/webapp/main/resources/webapp/images/.xvpics
+
+# /intermine/webservice/client/javascript/imbedding/0.2/
+/intermine/webservice/client/javascript/imbedding/0.2/*min.*
+
+# /intermine/webservice/client/javascript/imbedding/0.2/style/
+/intermine/webservice/client/javascript/imbedding/0.2/style/*min.*
+
+# mines
+malariamine/
+
+# IDEs
+nbproject/
+nb-build.xml
+.idea/
+apache-tomcat*
+prefixed
+failures.list
+*.jks
+biotestmine/project.xml
