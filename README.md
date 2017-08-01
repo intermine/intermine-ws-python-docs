@@ -8,4 +8,38 @@ If you already have python installed on your machine, you can pip install Jupyte
 http://jupyter.readthedocs.io/en/latest/install.html
 
 
+### Table of Contents
+#### Tutorial 1: Basics of Query:
+The basics that you need to create and run a query.
+
+#### Tutorial 2: Adding Constraints
+Adding simple constraints to make your queries more useful.
+
+#### Tutorial 3: More about constraints
+Different types of constraints.
+
+#### Tutorial 4: Query Features
+Joins and Path Descriptions.
+
+
+#### Tutorial 5: Query Results
+Dealing with results of your query.
+
+#### Tutorial 6: Advanced Results Management
+Filtering and Processing Results
+
+#### Tutorial 7: Templates
+Basics of calling a template. 
+
+#### Tutorial 8: Accessing Templates
+Authoring and Accessing your templates.
+
+#### Tutorial 9: Lists
+Creating and saving lists from identifiers. 
+
+#### Tutorial 10: Enrichment Calculations
+Performing Enrichment calculations on lists. 
+
+#### Tutorial 11: Combining Lists
+Combining lists using set operations. 
 
