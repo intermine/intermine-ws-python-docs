@@ -9,7 +9,7 @@ http://jupyter.readthedocs.io/en/latest/install.html
 
 
 ### Table of Contents
-#### Tutorial 1: Basics of Query:
+#### Tutorial 1: Basics of a Query
 The basics that you need to create and run a query.
 
 #### Tutorial 2: Adding Constraints
