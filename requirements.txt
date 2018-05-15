@@ -1,1 +1,1 @@
-intermine=1.09.09
+intermine==1.09.09
