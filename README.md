@@ -1,3 +1,5 @@
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/intermine/intermine-ws-python-docs/master)
+
 # intermine-ws-python-docs
 #### Tutorials for the InterMine Python web client
 
