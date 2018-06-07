@@ -43,3 +43,5 @@ Performing Enrichment calculations on lists.
 #### Tutorial 11: Combining Lists
 Combining lists using set operations. 
 
+#### Tutorial 12: More to do with queries
+Covers additional and useful operations on queries
