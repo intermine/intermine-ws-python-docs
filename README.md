@@ -15,7 +15,7 @@ http://jupyter.readthedocs.io/en/latest/install.html
 [The basics that you need to create and run a query.](01-tutorial.ipynb)
 
 #### Tutorial 2: Adding Constraints
-Adding simple constraints to make your queries more useful.(02-tutorial.ipynb)
+[Adding simple constraints to make your queries more useful.](02-tutorial.ipynb)
 
 #### Tutorial 3: More about constraints
 [Different types of constraints.](03-tutorial.ipynb)
@@ -44,4 +44,5 @@ Adding simple constraints to make your queries more useful.(02-tutorial.ipynb)
 
 #### Tutorial 11: Combining Lists
 [Combining lists using set operations.](11-tutorial.ipynb) 
+
 
