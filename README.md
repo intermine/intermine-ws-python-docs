@@ -12,36 +12,37 @@ http://jupyter.readthedocs.io/en/latest/install.html
 
 ### Table of Contents
 #### Tutorial 1: Basics of a Query
-[The basics that you need to create and run a query.](first-tutorial.ipynb)
+[The basics that you need to create and run a query.](01-tutorial.ipynb)
 
 #### Tutorial 2: Adding Constraints
-[Adding simple constraints to make your queries more useful.](second-tutorial.ipynb)
+[Adding simple constraints to make your queries more useful.](02-tutorial.ipynb)
 
 #### Tutorial 3: More about constraints
-[Different types of constraints.](third-tutorial.ipynb)
+[Different types of constraints.](03-tutorial.ipynb)
 
 #### Tutorial 4: Query Features
-[Joins and Path Descriptions.](fourth-tutorial.ipynb)
+[Joins and Path Descriptions.](04-tutorial.ipynb)
 
 
 #### Tutorial 5: Query Results
-[Dealing with results of your query.](fifth-tutorial.ipynb)
+[Dealing with results of your query.](05-tutorial.ipynb)
 
 #### Tutorial 6: Advanced Results Management
-[Filtering and Processing Results](sixth-tutorial.ipynb)
+[Filtering and Processing Results](06-tutorial.ipynb)
 
 #### Tutorial 7: Templates
-[Basics of calling a template. ](seventh-tutorial.ipynb)
+[Basics of calling a template.](07-tutorial.ipynb)
 
 #### Tutorial 8: Accessing Templates
-[Authoring and Accessing your templates.](eighth-tutorial.ipynb)
+[Authoring and Accessing your templates.](08-tutorial.ipynb)
 
 #### Tutorial 9: Lists
-[Creating and saving lists from identifiers. ](ninth-tutorial.ipynb)
+[Creating and saving lists from identifiers.](09-tutorial.ipynb)
 
 #### Tutorial 10: Enrichment Calculations
-[Performing Enrichment calculations on lists. ](tenth-tutorial.ipynb)
+[Performing Enrichment calculations on lists.](10-tutorial.ipynb)
 
 #### Tutorial 11: Combining Lists
-[Combining lists using set operations. ](eleventh-tutorial.ipynb)
+[Combining lists using set operations.](11-tutorial.ipynb) 
+
 
