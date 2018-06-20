@@ -11,6 +11,9 @@ http://jupyter.readthedocs.io/en/latest/install.html
 
 
 ### Table of Contents
+#### Tutorial 0: Registry Features
+[The utilies of extracting data about mine/organism using registry](00-tutorial.ipynb)
+
 #### Tutorial 1: Basics of a Query
 [The basics that you need to create and run a query.](01-tutorial.ipynb)
 
