@@ -49,3 +49,5 @@ http://jupyter.readthedocs.io/en/latest/install.html
 [Combining lists using set operations.](11-tutorial.ipynb) 
 
 
+#### Tutorial 12: More to do with queries
+Covers additional and useful operations on queries
