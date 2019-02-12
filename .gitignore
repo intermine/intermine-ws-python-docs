@@ -13,6 +13,8 @@ executeLog*
 productionLog
 *~
 
+.ipynb_checkpoints
+
 !/intermine/webservice/client/download/dist/
 
 # /intermine/objectstore/main/
