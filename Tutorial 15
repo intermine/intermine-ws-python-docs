@@ -1,0 +1,311 @@
+ {"cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "This tutorial will help you utlise the module to get details about the data model of various mines. These are additional examples, besides the ones covered in http://intermine.org/intermine-ws-python/intermine.html#module-intermine.model
+     Each class (data type) has information containing references to other objects in the data model, collections of references or attribute details."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Let's begin with something basic, say you want to see all the fields a data type contains (including all Attributes, References and Collections listed alphabetically),then-"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 55,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[CDSs is a group of CDS objects, which link back to this as gene,\n",
+       " UTRs is a group of UTR objects, which link back to this as gene,\n",
+       " alleles is a group of Allele objects, which link back to this as gene,\n",
+       " briefDescription is a String,\n",
+       " childFeatures is a group of SequenceFeature objects,\n",
+       " chromosome is a Chromosome,\n",
+       " chromosomeLocation is a Location,\n",
+       " clones is a group of CDNAClone objects, which link back to this as gene,\n",
+       " crossReferences is a group of CrossReference objects, which link back to this as subject,\n",
+       " cytoLocation is a String,\n",
+       " dataSets is a group of DataSet objects, which link back to this as bioEntities,\n",
+       " description is a String,\n",
+       " diseases is a group of Disease objects, which link back to this as genes,\n",
+       " downstreamIntergenicRegion is a IntergenicRegion,\n",
+       " exons is a group of Exon objects, which link back to this as gene,\n",
+       " flankingRegions is a group of GeneFlankingRegion objects, which link back to this as gene,\n",
+       " goAnnotation is a group of GOAnnotation objects,\n",
+       " homologues is a group of Homologue objects, which link back to this as gene,\n",
+       " id is a Integer,\n",
+       " interactions is a group of Interaction objects, which link back to this as participant1,\n",
+       " introns is a group of Intron objects, which link back to this as genes,\n",
+       " length is a Integer,\n",
+       " locatedFeatures is a group of Location objects, which link back to this as locatedOn,\n",
+       " locations is a group of Location objects, which link back to this as feature,\n",
+       " mRNAExpressionResults is a group of MRNAExpressionResult objects, which link back to this as gene,\n",
+       " miRNAtargets is a group of MiRNATarget objects, which link back to this as mirnagene,\n",
+       " microArrayResults is a group of MicroArrayResult objects, which link back to this as genes,\n",
+       " name is a String,\n",
+       " ontologyAnnotations is a group of OntologyAnnotation objects, which link back to this as subject,\n",
+       " organism is a Organism,\n",
+       " overlappingFeatures is a group of SequenceFeature objects,\n",
+       " pathways is a group of Pathway objects, which link back to this as genes,\n",
+       " primaryIdentifier is a String,\n",
+       " probeSets is a group of ProbeSet objects, which link back to this as genes,\n",
+       " proteins is a group of Protein objects, which link back to this as genes,\n",
+       " publications is a group of Publication objects, which link back to this as entities,\n",
+       " regulatoryRegions is a group of RegulatoryRegion objects, which link back to this as gene,\n",
+       " rnaSeqResults is a group of RNASeqResult objects, which link back to this as gene,\n",
+       " rnaiResults is a group of RNAiResult objects, which link back to this as gene,\n",
+       " score is a Double,\n",
+       " scoreType is a String,\n",
+       " secondaryIdentifier is a String,\n",
+       " sequence is a Sequence,\n",
+       " sequenceOntologyTerm is a SOTerm,\n",
+       " symbol is a String,\n",
+       " synonyms is a group of Synonym objects, which link back to this as subject,\n",
+       " transcripts is a group of Transcript objects, which link back to this as gene,\n",
+       " upstreamIntergenicRegion is a IntergenicRegion]"
+      ]
+     },
+     "execution_count": 55,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "from intermine.webservice import Service\n",
+    "service = Service(\"http://flymine.org/flymine/service\")\n",
+    "model = service.model\n",
+    "datatype = model.get_class(\"Gene\")\n",
+    "datatype.fields"
+   ]
+  },
+{
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "However suppose you have a class name, and want to know the details about a particular field it contains, then you can do the following- "
+   ]
+  },
+ {
+   "cell_type": "code",
+   "execution_count": 57,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "genes is a group of Gene objects, which link back to this as proteins"
+      ]
+     },
+     "execution_count": 57,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "from intermine.webservice import Service\n",
+    "service = Service(\"http://flymine.org/flymine/service\")\n",
+    "model = service.model\n",
+    "datatype = model.get_class(\"Protein\")\n",
+    "datatype.get_field('genes')"
+   ]
+  },
+ {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Note that if you enter a field name that does not belong to the class, then you will receive an error. "
+   ]
+  },
+ {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Now, suppose you want to find out the nature of the data you retrieved earlier (i.e. whether it is an 'Attribute' or 'Collection'/'Reference'), you can easily iterate over the fields we had obtained earlier- "
+   ]
+  }, 
+  {
+   "cell_type": "code",
+   "execution_count": 56,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "CDSs - REFERENCE\n",
+      "canonicalProtein - REFERENCE\n",
+      "comments - REFERENCE\n",
+      "components - REFERENCE\n",
+      "crossReferences - REFERENCE\n",
+      "dataSets - REFERENCE\n",
+      "ecNumber - ATTRIBUTE\n",
+      "ecNumbers - REFERENCE\n",
+      "features - REFERENCE\n",
+      "genbankIdentifier - ATTRIBUTE\n",
+      "genes - REFERENCE\n",
+      "id - ATTRIBUTE\n",
+      "interactions - REFERENCE\n",
+      "isFragment - ATTRIBUTE\n",
+      "isUniprotCanonical - ATTRIBUTE\n",
+      "isoforms - REFERENCE\n",
+      "keywords - REFERENCE\n",
+      "length - ATTRIBUTE\n",
+      "locatedFeatures - REFERENCE\n",
+      "locations - REFERENCE\n",
+      "md5checksum - ATTRIBUTE\n",
+      "molecularWeight - ATTRIBUTE\n",
+      "name - ATTRIBUTE\n",
+      "ontologyAnnotations - REFERENCE\n",
+      "organism - REFERENCE\n",
+      "pathways - REFERENCE\n",
+      "primaryAccession - ATTRIBUTE\n",
+      "primaryIdentifier - ATTRIBUTE\n",
+      "proteinDomainRegions - REFERENCE\n",
+      "publications - REFERENCE\n",
+      "secondaryIdentifier - ATTRIBUTE\n",
+      "sequence - REFERENCE\n",
+      "symbol - ATTRIBUTE\n",
+      "synonyms - REFERENCE\n",
+      "transcripts - REFERENCE\n",
+      "uniprotAccession - ATTRIBUTE\n",
+      "uniprotName - ATTRIBUTE\n"
+     ]
+    }
+   {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Notice that we used make_path() in the process. This function helps us construct paths and inspect whether it is valid or not, or as in here, utilise it to get more information from the model. "
+   ]
+  },  
+   ],
+   "source": [
+    "from intermine.webservice import Service\n",
+    "service = Service(\"http://flymine.org/flymine/service\")\n",
+    "model = service.model\n",
+    "datatype = model.get_class(\"Protein\")\n",
+    "fieldtypes=[]\n",
+    "for field in datatype.fields:\n",
+    "\n",
+    "    fieldtypes.append(str(field))\n",
+    "    path = model.make_path(\"Protein\"+\".\"+fieldtypes[len(fieldtypes)-1])\n",
+    "    if path.is_reference()== True:\n",
+    "        print(fieldtypes[len(fieldtypes)-1],'-', 'REFERENCE')\n",
+    "       \n",
+    "    if path.is_attribute()== True:\n",
+    "        print(fieldtypes[len(fieldtypes)-1], '-','ATTRIBUTE')\n",
+    "        "
+   ]
+  },
+{
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Now let's look at what information we can get regarding 'inheritance' of class'. "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "The isa(input) function helps us determine whether 'input' belongs to the ancestry(is a parent class or one of the parents of the parent class or so on) of a given class. "
+   ]
+  },
+ {
+   "cell_type": "code",
+   "execution_count": 100,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 100,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "from intermine.webservice import Service\n",
+    "service = Service(\"http://flymine.org/flymine/service\")\n",
+    "model = service.model\n",
+    "datatype = model.get_class(\"Protein\")\n",
+    "datatype.isa('Allele')"
+   ]
+  },
+{
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Thus 'Allele' does not belong to the ancestry of class 'Protein'. "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "This will return the entire sequence of parent classes, until a parent class does not have any further parent class' "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 89,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "BioEntity\n",
+      "Annotatable\n"
+     ]
+    }
+   ],
+   "source": [
+    "from intermine.webservice import Service\n",
+    "service = Service(\"http://flymine.org/flymine/service\")\n",
+    "model = service.model\n",
+    "datatype = model.get_class(\"Protein\")\n",
+    "classes = model.to_ancestry(datatype)\n",
+    "for i in classes:\n",
+    "    print(i.name)"
+   ]
+  },
+ {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "This tutorial thus explained how to get information regarding a class i.e. its attributes and the inheritance it shares without having to retrieve the entire model! "
+   ]
+  }, 
+"metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.6.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
