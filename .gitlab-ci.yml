@@ -1,0 +1,10 @@
+image: "python:3.5"
+
+before_script:
+  - python --version
+  - pip3 install -r requirements.txt
+
+job1:
+  script:
+  - chmod +x ./ipynb_check.py
+  - ./ipynb_check.py
