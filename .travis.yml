@@ -6,4 +6,5 @@ install:
   - pip3 install -r requirements.txt
 # command to run tests
 script:
+  - chmod +x ./ipynb_check.py
   - ./ipynb_check.py
