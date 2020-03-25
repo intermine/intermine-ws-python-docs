@@ -3,3 +3,4 @@ notebook
 lxml
 requests
 pandas
+matplotlib
