@@ -8,7 +8,7 @@ python:
 install:
   - pip install -r requirements.txt
   # - pip install os
-  - pip install subprocess
+  # - pip install subprocess
 # command to run tests
 script:
   - chmod +x ./ipynb_check.py
