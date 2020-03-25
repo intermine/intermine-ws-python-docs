@@ -1,3 +1,4 @@
 intermine
 notebook
 lxml
+requests
