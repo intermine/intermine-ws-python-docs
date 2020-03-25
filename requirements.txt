@@ -2,3 +2,4 @@ intermine
 notebook
 lxml
 requests
+pandas
