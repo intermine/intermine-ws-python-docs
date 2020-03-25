@@ -1,0 +1,15 @@
+language: python
+python:
+  - "3.5"
+  - "3.6"
+  - "3.7"
+  - "3.8"
+# command to install dependencies
+install:
+  - pip3 install -r requirements.txt
+  - pip3 install os
+  - pip3 install subprocess
+# command to run tests
+script:
+  - chmod +x ./ipynb_check.py
+  - ./ipynb_check.py
