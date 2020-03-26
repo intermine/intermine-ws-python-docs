@@ -20,7 +20,7 @@ def main():
     status = []
     for notebook in notebooks:
         output = subprocess.run(
-                                ['jupyter', 'nbconvert',
+                                ['jupyter', 'nbconvert', '--ExecutePreprocessor.timeout=300',
                                  '--to', 'notebook', '--inplace',
                                  '--execute', notebook],
                                 stdout=subprocess.DEVNULL)
