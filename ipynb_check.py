@@ -21,8 +21,8 @@ def main():
     for notebook in notebooks:
         output = subprocess.run(
                                 ['jupyter', 'nbconvert',
-                                '--to', 'notebook', '--inplace',
-                                '--execute', notebook],
+                                 '--to', 'notebook', '--inplace',
+                                 '--execute', notebook],
                                 stdout=subprocess.DEVNULL)
         if output.returncode == 0:
             status.append("passed")
