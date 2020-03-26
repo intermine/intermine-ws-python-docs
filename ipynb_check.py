@@ -4,6 +4,7 @@ Tests notebooks in the given directory
 from os import listdir
 import subprocess
 
+
 def list_files(directory, extension):
     """
     Returns all files in the given directory and the given extension
@@ -19,10 +20,10 @@ def main():
     status = []
     for notebook in notebooks:
         output = subprocess.run(
-            ['jupyter', 'nbconvert', 
-            '--to', 'notebook', '--inplace', 
-            '--execute', notebook],
-            stdout=subprocess.DEVNULL)
+                                ['jupyter', 'nbconvert',
+                                '--to', 'notebook', '--inplace',
+                                '--execute', notebook],
+                                stdout=subprocess.DEVNULL)
         if output.returncode == 0:
             status.append("passed")
         else:
