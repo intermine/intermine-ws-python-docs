@@ -1,2 +1,6 @@
-intermine==1.09.09
-testipynb
+intermine
+notebook
+lxml
+requests
+pandas
+matplotlib
