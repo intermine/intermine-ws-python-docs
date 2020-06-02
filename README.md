@@ -1,4 +1,4 @@
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/intermine/intermine-ws-python-docs/master)
+[![Build Status](https://travis-ci.com/intermine/intermine-ws-python-docs.svg?branch=master)](https://travis-ci.com/intermine/intermine-ws-python-docs) [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/intermine/intermine-ws-python-docs/master)
 
 # intermine-ws-python-docs
 #### Tutorials for the InterMine Python web client
