@@ -90,6 +90,7 @@ http://jupyter.readthedocs.io/en/latest/install.html
 - Try live (with completed answers):
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/intermine/intermine-ws-python-docs/master?filepath=09-tutorial.ipynb)
 
+
 #### Tutorial 10: Enrichment Calculations
 [Performing Enrichment calculations on lists.](10-tutorial.ipynb)
 - Try live:
