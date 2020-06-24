@@ -34,6 +34,7 @@ http://jupyter.readthedocs.io/en/latest/install.html
 - Try live (with completed answers):
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/intermine/intermine-ws-python-docs/master?filepath=02-tutorial.ipynb)
 
+
 #### Tutorial 3: More about constraints
 [Different types of constraints.](03-tutorial.ipynb)
 
@@ -90,7 +91,6 @@ http://jupyter.readthedocs.io/en/latest/install.html
 - Try live (with completed answers):
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/intermine/intermine-ws-python-docs/master?filepath=09-tutorial.ipynb)
 
-
 #### Tutorial 10: Enrichment Calculations
 [Performing Enrichment calculations on lists.](10-tutorial.ipynb)
 - Try live:
@@ -113,3 +113,27 @@ http://jupyter.readthedocs.io/en/latest/install.html
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/intermine/intermine-ws-python-docs/master?filepath=unsolved-exercises%2F12-tutorial.ipynb)
 - Try live (with completed answers):
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/intermine/intermine-ws-python-docs/master?filepath=12-tutorial.ipynb)
+
+#### Tutorial 13: Query Manager
+[Making better queries with Query Manager](13-tutorial.ipynb)
+
+- Try live:
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/intermine/intermine-ws-python-docs/master?filepath=unsolved-exercises%2F13-tutorial.ipynb)
+- Try live (with completed answers):
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/intermine/intermine-ws-python-docs/master?filepath=13-tutorial.ipynb)
+
+#### Tutorial 14: Data Visualisation
+[Visualising the data using Python client.](14-tutorial.ipynb)
+
+- Try live:
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/intermine/intermine-ws-python-docs/master?filepath=unsolved-exercises%2F14-tutorial.ipynb)
+- Try live (with completed answers):
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/intermine/intermine-ws-python-docs/master?filepath=14-tutorial.ipynb)
+
+#### Tutorial 15: Data Model of Various Mines
+[Utilising the module to get details about the data model of various mines](15-tutorial.ipynb)
+
+- Try live:
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/intermine/intermine-ws-python-docs/master?filepath=unsolved-exercises%2F15-tutorial.ipynb)
+- Try live (with completed answers):
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/intermine/intermine-ws-python-docs/master?filepath=15-tutorial.ipynb)
