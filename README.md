@@ -34,7 +34,6 @@ http://jupyter.readthedocs.io/en/latest/install.html
 - Try live (with completed answers):
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/intermine/intermine-ws-python-docs/master?filepath=02-tutorial.ipynb)
 
-
 #### Tutorial 3: More about constraints
 [Different types of constraints.](03-tutorial.ipynb)
 
