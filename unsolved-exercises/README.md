@@ -48,4 +48,14 @@ http://jupyter.readthedocs.io/en/latest/install.html
 #### Tutorial 11: Combining Lists
 [Combining lists using set operations.](11-tutorial.ipynb) [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/yochannah/intermine-ws-python-docs/empty-tutorial?filepath=11-tutorial.ipynb)
 
+#### Tutorial 12: More about Queries
+[Managing queries effectively](12-tutorial.ipynb) [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/yochannah/intermine-ws-python-docs/empty-tutorial?filepath=12-tutorial.ipynb)
 
+#### Tutorial 13: Query Manager
+[Usage of query_manager](13-tutorial.ipynb) [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/yochannah/intermine-ws-python-docs/empty-tutorial?filepath=13-tutorial.ipynb)
+
+#### Tutorial 14: Visualisation in InterMine
+[Plotting graphs](14-tutorial.ipynb) [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/yochannah/intermine-ws-python-docs/empty-tutorial?filepath=14-tutorial.ipynb)
+
+#### Tutorial 15: Simple Ways to Manipulate the Model
+[Utilising the module to get details about the data model of various mines](15-tutorial.ipynb) [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/yochannah/intermine-ws-python-docs/empty-tutorial?filepath=15-tutorial.ipynb)
